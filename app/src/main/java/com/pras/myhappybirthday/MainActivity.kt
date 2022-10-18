@@ -3,6 +3,7 @@ package com.pras.myhappybirthday
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -31,14 +32,16 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BirthdayGreetingWithText(message: String, from: String) {
-    Text(
-        text = message,
-        fontSize = 36.sp
-    )
-    Text(
-        text = from,
-        fontSize = 24.sp
-    )
+    Column {
+        Text(
+            text = message,
+            fontSize = 36.sp
+        )
+        Text(
+            text = from,
+            fontSize = 24.sp
+        )
+    }
 }
 
 @Preview(showBackground = true)
