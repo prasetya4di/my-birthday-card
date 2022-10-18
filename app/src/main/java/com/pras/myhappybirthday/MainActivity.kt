@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -29,8 +30,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     BirthdayGreetingWithImage(
-                        "Happy Birthday Pras !",
-                        "- from Elsa"
+                        stringResource(id = R.string.happy_birthday_text),
+                        stringResource(id = R.string.signature_text)
                     )
                 }
             }
